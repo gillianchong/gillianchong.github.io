@@ -17,7 +17,7 @@ function GetBookings() {
       var Email = json.bookings[i].email;
       var Pax = json.bookings[i].pax;
       var Id = json.bookings[i].id;
-      var buttonId = "delete" + id;
+      var buttonId = "delete" + Id;
 
       let row = bookings.insertRow(bookings.rows.length);
       row.insertCell(0).innerHTML = Id;
@@ -39,8 +39,6 @@ function GetBookings() {
      }
     });
     }
-    document.getElementById("getBooking").addEventListener("click", function() {
-      GetBookings();
-    })
+    
     
    
