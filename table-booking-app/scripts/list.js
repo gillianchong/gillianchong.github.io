@@ -49,11 +49,7 @@ function GetBookings() {
           method: 'DELETE',
         })
         .then((response) => {
-          let table = document.getElementById("booking-list");
-          for(let i = 1; i < table.rows.length; i++){
-            table.deleteRow(i);
-          }
-          GetBookings();
+         location.reload();
         });
       } else {
          alert("Delete cancelled");
