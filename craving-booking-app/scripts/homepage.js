@@ -1,12 +1,3 @@
-function SignIn (Username, EmailAddress, Password){
-    let body = {
-        signin: {
-         username:guestName,
-         emailaddress:guestEmail,
-         password:guestPassword
-        }
-      }
-}
 function checkPassword() {
   var password = document.getElementById("password").value;
 
@@ -21,7 +12,7 @@ var elPassword = document.getElementById ("password");
 elPassword.onblur = checkPassword;
 
 
-fetch(url, {
+/*fetch(url, {
     method: 'POST',
     body: JSON.stringify(body),
     headers:{
@@ -44,4 +35,4 @@ fetch(url, {
 
      Confirm(username, emailaddress, password);
     });
-});
+}); */
