@@ -1,18 +1,4 @@
-function checkPassword() {
-  var password = document.getElementById("password").value;
-
-  if (password.length < 8) {
-   alert("Password must be more than 8 characters");
-  } else {
-   alert("Password accepted!");
-  }
-}
-
-var elPassword = document.getElementById ("password");
-elPassword.onblur = checkPassword;
-
-
-/*fetch(url, {
+fetch(url, {
     method: 'POST',
     body: JSON.stringify(body),
     headers:{
@@ -35,4 +21,4 @@ elPassword.onblur = checkPassword;
 
      Confirm(username, emailaddress, password);
     });
-}); */
+}); 
