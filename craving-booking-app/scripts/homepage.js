@@ -11,7 +11,7 @@ fetch(url, {
       console.log(json.homepage);
       alert(json.username + "successfully added!");
     });
-   }
+   
 
    window.addEventListener("load",function(){
     document.getElementById("Confirm").addEventListener("click",function(){
