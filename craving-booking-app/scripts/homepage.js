@@ -9,7 +9,7 @@
 }); 
 
 ((response) => response.json())
-    .then(json => {
+    then(json => {
       // Do something with object
       console.log(json.homepage);
       alert(json.username + "sign up successfully!");
