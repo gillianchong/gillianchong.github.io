@@ -83,34 +83,34 @@
         <div class = "col">
          <form>
           <div class="form-group">
-            <label for="exampleFormControlInput1">Name</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First and Last Name">
+            <label for="guestName">Name</label>
+            <input type="text" class="form-control" id="guestName" placeholder="First and Last Name">
           </div>
            
            <div class="form-group">
-            <label for="exampleFormControlInput1">Email</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="sample@example.com">
+            <label for="guestEmail">Email</label>
+            <input type="text" class="form-control" id="guestEmail" placeholder="sample@example.com">
           </div>
            
            <div class="form-group">
-            <label for="exampleFormControlInput1">Phone Number</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="01X-XXXXXXX">
+            <label for="guestPhone">Phone Number</label>
+            <input type="text" class="form-control" id="guestPhone" placeholder="01X-XXXXXXX">
           </div>
            
           <div class="form-group">
-          <label for="exampleFormControlSelect1">Pax</label>
+          <label for="guestPax">Pax</label>
             <div class="row">
               <div class="col">
-                <input type="text" class="form-control" placeholder="Adult">
+                <input type="text" class="form-control" id="guestPax" placeholder="Adult">
               </div>
               <div class="col">
-                <input type="text" class="form-control" placeholder="Children">
+                <input type="text" class="form-control" id="guestPax" placeholder="Children">
               </div>
             </div> <br/>
         
            <div class="form-group">
-            <label for="exampleFormControlSelect1">Select Hotel</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <label for="guestHotel">Select Hotel</label>
+            <select class="form-control" id="guestHotel">
               <option>The Dusun</option>
               <option>Royale Chulan Seremban</option>
               <option>One Heritage Hotel</option>
@@ -121,28 +121,28 @@
                    
       <div class="row">
         <div class="col">
-          <input type="text" class="form-control" placeholder="Check-in Date">
+          <input type="text" class="form-control" id="guestCheckin" placeholder="Check-in Date">
         </div> <br/> <hr/>
         <small id="emailHelp" class="form-text text-muted">dd-mm-yyyy</small>
         <div class="col">
-          <input type="text" class="form-control" placeholder="Check-out Date">
+          <input type="text" class="form-control" id="guestCheckout" placeholder="Check-out Date">
         </div> <br/>
         <small id="emailHelp" class="form-text text-muted">dd-mm-yyyy</small>
       </div> <br/>
             
            <fieldset class="form-group">
             <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0">Payment</legend>
+          <legend class="col-form-label col-sm-2 pt-0" id="guestPayment">Payment</legend>
           <div class="col-sm-10">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-              <label class="form-check-label" for="gridRadios1">
+              <input class="form-check-input" type="radio" name="gridRadios" id="guestPayment" value="option1" checked>
+              <label class="form-check-label" for="guestPayment">
                 Credit/Debit Card
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-              <label class="form-check-label" for="gridRadios2">
+              <input class="form-check-input" type="radio" name="gridRadios" id="guestPayment" value="option2">
+              <label class="form-check-label" for="guestPayment">
                 Cash
               </label>
             </div> 
@@ -152,11 +152,11 @@
       </fieldset> 
            
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Remarks</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="guestRemarks">Remarks</label>
+            <textarea class="form-control" id="guestRemarks" rows="3"></textarea>
           </div>
   
-      <button type="submit" class="btn btn-primary btn-sm">Book Now</button> 
+      <button type="submit" class="btn btn-primary btn-sm" id="BookNow">Book Now</button> 
       <hr/>
 </form>
           
