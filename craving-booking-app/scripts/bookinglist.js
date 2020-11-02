@@ -13,7 +13,7 @@ window.addEventListener("load", function() {
       var bookings = document.getElementById("booking-list");
       var bookingIds = [];
       
-      for(var i = 0; i < json.bookings.length; i++) {
+      for(var i = 0; i < json.bookings; i++) {
        var Name = json.bookings[i].name;
        var Email = json.bookings[i].email;
        var Phonenumber = json.bookings[i].phone;
