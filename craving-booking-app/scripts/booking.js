@@ -1,4 +1,4 @@
-function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guestCheckin, guestCheckout, guestPayment, guestRemarks) {
+//function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guestCheckin, guestCheckout, guestPayment, guestRemarks) {
     let url = 'https://api.sheety.co/5c1a3167570b84950870483f1c80fbf9/cravingBookingList/booking';
     let body = {
       booking: {
@@ -12,14 +12,14 @@ function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guest
        payment:guestPayment,
        remarks: guestRemarks
       }
-    }
+    }//
   
-    function BookNow() {
+    function Booking() {
       alert("Your booking is successfully added! Please check at view booking site!");
     }
   
 
-   window.addEventListener("load",function(){
+   //window.addEventListener("load",function(){
        document.getElementById("BookNow").addEventListener("click",function(){
         let name = document.getElementById("guestName").value;
         let email = document.getElementById("guestEmail").value;
@@ -34,5 +34,5 @@ function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guest
         
         BookNow(name, email, phonenumber, pax, hotel, checkindate, checkoutdate, payment, remarks);
        });
-   });
+   });//
    
