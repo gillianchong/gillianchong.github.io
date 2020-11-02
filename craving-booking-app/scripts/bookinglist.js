@@ -1,7 +1,3 @@
-window.addEventListener("load", function() {
-    GetBookings();
- });
- 
  function GetBookings() {
      let url = 
      'https://api.sheety.co/5c1a3167570b84950870483f1c80fbf9/cravingBookingList/booking';
@@ -51,6 +47,9 @@ window.addEventListener("load", function() {
       }
      });
      }
+     document.getElementById("getBooking").addEventListener("click", function() {
+      GetBookings();
+    })
  
      function DeleteBooking (id) {
        
@@ -60,13 +59,10 @@ window.addEventListener("load", function() {
            method: 'DELETE',
          })
          .then((response) => {
-          location.reload();
-         });
-       } else {
-          alert("Delete cancelled");
-       }
-     }
-     
-     
-     
-    
+          document.getElementById("deletebooking").innerHTML = "Booking deleted!"
+          GetBookings();
+        });
+        }
+        document.getElementById("deletebooking").addEventListener("click",function() {
+          DeleteBooking(document.getElementById ("deletebooking").value);
+        });
