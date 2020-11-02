@@ -24,7 +24,7 @@ function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guest
     .then(json => {
       // Do something with object
       console.log(json.booking);
-      alert(json.booking.name + "successfully added!");
+      alert(json.booking.name  + "successfully added!");
     });
    }
 
