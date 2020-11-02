@@ -31,6 +31,8 @@ function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guest
        GetBookings();
     });
    }
+
+   window.addEventListener("load",function(){
   document.getElementById("BookNow").addEventListener("click",function() {
     let guestname = document.getElementById("guestName").value;
     let guestemail = document.getElementById("guestEmail").value;
