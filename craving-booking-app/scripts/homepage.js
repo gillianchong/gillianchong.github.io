@@ -8,7 +8,7 @@
     });
 }); 
 
-then((response) => response.json())
+((response) => response.json())
     .then(json => {
       // Do something with object
       console.log(json.homepage);
