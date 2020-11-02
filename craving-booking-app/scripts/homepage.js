@@ -1,3 +1,3 @@
 function SignUp() {
-  alert("successfully added!");
+  alert("sign up successfully!");
 }

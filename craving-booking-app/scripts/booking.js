@@ -13,20 +13,11 @@ function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guest
        remarks: guestRemarks
       }
     }
-    fetch(url, {
-      method: 'POST',
-      body: JSON.stringify(body),
-      headers:{
-       "Content-Type":"application/json"
-      }
-    })
-    .then((response) => response.json())
-    .then(json => {
-      // Do something with object
-      console.log(json.booking);
-      alert(json.booking.name  + "successfully added!");
-    });
-   }
+  
+    function BookNow() {
+      alert("your booking is successfully added!");
+    }
+  
 
    window.addEventListener("load",function(){
        document.getElementById("BookNow").addEventListener("click",function(){
