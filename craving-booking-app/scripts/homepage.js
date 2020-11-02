@@ -1,4 +1,4 @@
- //  window.addEventListener("load",function(){
+   window.addEventListener("load",function(){
     document.getElementById("Confirm").addEventListener("click",function(){
      let username = document.getElementById("username").value;
      let emailaddress = document.getElementById("emailaddress").value;
@@ -13,4 +13,4 @@
       // Do something with object
       console.log(json.homepage);
       alert(json.username + "sign up successfully!");
-    });//
+    });

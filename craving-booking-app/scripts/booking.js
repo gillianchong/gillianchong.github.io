@@ -29,7 +29,7 @@ function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guest
    }
 
    window.addEventListener("load",function(){
-       document.getElementById("bookNow").addEventListener("click",function(){
+       document.getElementById("BookNow").addEventListener("click",function(){
         let name = document.getElementById("guestName").value;
         let email = document.getElementById("guestEmail").value;
         let phonenumber = document.getElementById("guestPhone").value;
