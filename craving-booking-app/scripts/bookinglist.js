@@ -22,18 +22,18 @@
        var Remarks = json.bookings[i].remarks;
        var buttonId = "delete" + Id;
  
-       let row = bookings.insertRow(bookings.rows.length);
-       row.insertCell(0).innerHTML = Id;
-       row.insertCell(1).innerHTML = Name;
-       row.insertCell(2).innerHTML = Email;
-       row.insertCell(3).innerHTML = Phonenumber;
-       row.insertCell(4).innerHTML = Pax;
-       row.insertCell(5).innerHTML = Hotel;
-       row.insertCell(6).innerHTML = Checkindate;
-       row.insertCell(7).innerHTML = Checkoutdate;
-       row.insertCell(8).innerHTML = Payment;
-       row.insertCell(9).innerHTML = Remarks; //Remarks
-       row.insertCell(10).innerHTML = "<button id='" + buttonId + "' class='btn btn-danger'>Delete</button><br/>";
+       //let row = bookings.insertRow(bookings.rows.length);
+       //row.insertCell(0).innerHTML = Id;
+       //row.insertCell(1).innerHTML = Name;
+       //row.insertCell(2).innerHTML = Email;
+       //row.insertCell(3).innerHTML = Phonenumber;
+       //row.insertCell(4).innerHTML = Pax;
+       //row.insertCell(5).innerHTML = Hotel;
+       //row.insertCell(6).innerHTML = Checkindate;
+       //row.insertCell(7).innerHTML = Checkoutdate;
+       //row.insertCell(8).innerHTML = Payment;
+       //row.insertCell(9).innerHTML = Remarks; //Remarks
+       //row.insertCell(10).innerHTML = "<button id='" + buttonId + "' class='btn btn-danger'>Delete</button><br/>";
      
         bookingIds.push(buttonId);
       }
@@ -59,10 +59,9 @@
            method: 'DELETE',
          })
          .then((response) => {
-          document.getElementById("deletebooking").innerHTML = "Booking deleted!"
-          GetBookings();
+          location.reload();
         });
-        }
-        document.getElementById("deletebooking").addEventListener("click",function() {
-          DeleteBooking(document.getElementById ("deletebooking").value);
-        });
+      } else {
+         alert("Delete cancelled");
+      }
+    }
