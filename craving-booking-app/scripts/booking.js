@@ -15,7 +15,7 @@ function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guest
     }
   
     function BookNow() {
-      alert("your booking is successfully added!");
+      alert("Your booking is successfully added! Please check at view booking site!");
     }
   
 
