@@ -13,7 +13,7 @@ function GetBookings() {
       var bookings = document.getElementById("booking-list");
       var bookingIds = [];
       
-      for(var i = 0; i < json.booking; i++) {
+      for(var i = 0; i < json.booking.length; i++) {
        var Name = json.booking[i].name;
        var Email = json.booking[i].email;
        var Phonenumber = json.booking[i].phone;
