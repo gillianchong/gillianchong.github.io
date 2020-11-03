@@ -27,12 +27,11 @@ function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guest
     .then(json => {
       // Do something with object
       console.log(json.booking);
-       document.getElementById("BookNow").innerHTML = json.booking.name + " successfully added!";
-       GetBookings();
+      alert(json.booking.name + "successfully added!");
     });
    }
 
-  //window.addEventListener("load",function(){
+  window.addEventListener("load",function(){
   document.getElementById("BookNow").addEventListener("click",function() {
     let guestname = document.getElementById("guestName").value;
     let guestemail = document.getElementById("guestEmail").value;
