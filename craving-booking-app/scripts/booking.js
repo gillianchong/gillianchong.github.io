@@ -4,11 +4,11 @@ function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guest
     booking: {
      name:guestName,
      email:guestEmail,
-     phonenumber:guestPhone,
+     phoneNumber:guestPhone,
      pax:guestPax,
      hotel:guestHotel,
-     checkindate:guestCheckin,
-     checkoutdate:guestCheckout,
+     checkInDate:guestCheckin,
+     checkOutDate:guestCheckout,
      payment:guestPayment,
      remarks: guestRemarks }
   }
