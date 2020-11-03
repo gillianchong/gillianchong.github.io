@@ -31,7 +31,7 @@ function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guest
     });
    }
 
-  window.addEventListener("load",function(){
+  //window.addEventListener("load",function(){
   document.getElementById("BookNow").addEventListener("click",function() {
     let guestname = document.getElementById("guestName").value;
     let guestemail = document.getElementById("guestEmail").value;
