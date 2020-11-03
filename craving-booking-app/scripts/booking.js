@@ -1,7 +1,3 @@
-function BookNow {
-      alert("Your booking is successfully added! Please check at view booking site!");
-}
-
 function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guestCheckin, guestCheckout, guestPayment, guestRemarks) {
   let url = 'https://api.sheety.co/5c1a3167570b84950870483f1c80fbf9/cravingBookingList/booking';
   let body = {
