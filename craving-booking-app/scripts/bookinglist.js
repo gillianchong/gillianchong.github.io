@@ -1,4 +1,8 @@
- function GetBookings() {
+window.addEventListener("load", function() {
+  GetBookings();
+});
+
+function GetBookings() {
      let url = 
      'https://api.sheety.co/5c1a3167570b84950870483f1c80fbf9/cravingBookingList/booking';
      fetch(url)
@@ -47,10 +51,7 @@
       }
      });
      }
-     document.getElementById("getBooking").addEventListener("click", function() {
-      GetBookings();
-    })
- 
+     
      function DeleteBooking (id) {
        
        if(confirm("Are you sure you want to delete?")){
