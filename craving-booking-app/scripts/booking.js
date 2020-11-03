@@ -23,7 +23,7 @@ function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guest
     .then(json => {
       // Do something with object
       console.log(json.booking);
-      alert(json.booking.name  "," +  "your booking is successfully added! Please check at view booking site!");
+      alert(json.booking.name +  "your booking is successfully added! Please check at view booking site!");
     });
    }
 
