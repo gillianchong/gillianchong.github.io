@@ -13,17 +13,17 @@ function GetBookings() {
       var bookings = document.getElementById("booking-list");
       var bookingIds = [];
       
-      for(var i = 0; i < json.booking.length; i++) {
-       var Name = json.booking[i].name;
-       var Email = json.booking[i].email;
-       var phoneNumber = json.booking[i].phoneNumber;
-       var Pax = json.booking[i].pax;
-       var Hotel = json.booking[i].hotel;
-       var checkInDate = json.booking[i].checkInDate;
-       var checkOutDate = json.booking[i].checkOutDate;
-       var Payment = json.booking[i].payment;
-       var Id = json.booking[i].id;
-       var Remarks = json.booking[i].remarks;
+      for(var i = 0; i < json.bookings.length; i++) {
+       var Name = json.bookings[i].name;
+       var Email = json.bookings[i].email;
+       var phoneNumber = json.bookings[i].phoneNumber;
+       var Pax = json.bookings[i].pax;
+       var Hotel = json.bookings[i].hotel;
+       var checkInDate = json.bookings[i].checkInDate;
+       var checkOutDate = json.bookings[i].checkOutDate;
+       var Payment = json.bookings[i].payment;
+       var Id = json.bookings[i].id;
+       var Remarks = json.bookings[i].remarks;
        var buttonId = "delete" + Id;
  
        let row = bookings.insertRow(bookings.rows.length);
