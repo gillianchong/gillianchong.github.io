@@ -31,15 +31,15 @@ function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guest
   document.getElementById("BookNow").addEventListener("click",function() {
     let name = document.getElementById("guestName").value;
     let email = document.getElementById("guestEmail").value;
-    let phoneNumber = document.getElementById("guestPhone").value;
+    let phonenumber = document.getElementById("guestPhone").value;
     let pax = document.getElementById("guestPax").value;
     let hotel = document.getElementById("guestHotel").value;
-    let checkInDate = document.getElementById("guestCheckin").value;
-    let checkOutDate = document.getElementById("guestCheckout").value;
+    let checkindate = document.getElementById("guestCheckin").value;
+    let checkoutdate = document.getElementById("guestCheckout").value;
     let payment = document.getElementById("guestPayment").value;
     let remarks = document.getElementById("guestRemarks").value;
 
     
-    BookNow(name, email, phoneNumber, pax, hotel, checkInDate, checkOutDate, payment, remarks);
+    BookNow(name, email, phonenumber, pax, hotel, checkindate, checkoutdate, payment, remarks);
    });
   });
