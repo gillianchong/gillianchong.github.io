@@ -1,5 +1,5 @@
 function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guestCheckin, guestCheckout, guestPayment, guestRemarks) {
-  let url = 'https://api.sheety.co/dc6f0424a623e061b0c605a06b375549/bookingList/cravingCo';
+  let url = 'https://api.sheety.co/dc6f0424a623e061b0c605a06b375549/bookingList/booking';
   let body = {
     booking: {
      name:guestName,
