@@ -29,17 +29,17 @@ function BookNow (guestName, guestEmail, guestPhone, guestPax, guestHotel, guest
 
   window.addEventListener("load",function(){
   document.getElementById("BookNow").addEventListener("click",function() {
-    let guestname = document.getElementById("guestName").value;
-    let guestemail = document.getElementById("guestEmail").value;
-    let guestphonenumber = document.getElementById("guestPhone").value;
-    let guestpax = document.getElementById("guestPax").value;
-    let guesthotel = document.getElementById("guestHotel").value;
-    let guestcheckindate = document.getElementById("guestCheckin").value;
-    let guestcheckoutdate = document.getElementById("guestCheckout").value;
-    let guestpayment = document.getElementById("guestPayment").value;
-    let guestremarks = document.getElementById("guestRemarks").value;
+    let name = document.getElementById("guestName").value;
+    let email = document.getElementById("guestEmail").value;
+    let phoneNumber = document.getElementById("guestPhone").value;
+    let pax = document.getElementById("guestPax").value;
+    let hotel = document.getElementById("guestHotel").value;
+    let checkInDate = document.getElementById("guestCheckin").value;
+    let checkOutDate = document.getElementById("guestCheckout").value;
+    let payment = document.getElementById("guestPayment").value;
+    let remarks = document.getElementById("guestRemarks").value;
 
     
-    BookNow(guestname, guestemail, guestphonenumber, guestpax, guesthotel, guestcheckindate, guestcheckoutdate, guestpayment, guestremarks);
+    BookNow(name, email, phoneNumber, pax, hotel, checkInDate, checkOutDate, payment, remarks);
    });
   });
